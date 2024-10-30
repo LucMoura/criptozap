@@ -7,27 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1><strong><em>CriptoZap Chat</em></strong></h1>
-        <img src="./assents/criptozap_logo.png" alt="">
-    </header>
-    <section id="body">
-        <div id="caixa">
-            <h3>Login</h3>
-            <form action="" method="post">
-                <input type="email" name="email" placeholder="Digite seu email" required>
-                <input type="password" name="senha" placeholder="Digite sua senha" required>
-                <button type="submit" name="login">Entrar</button>
-            </form>
-
-            <h3>Registrar</h3>
-            <form action="" method="post">
-                <input type="email" name="email_registro" placeholder="Digite seu email" required>
-                <input type="password" name="senha_registro" placeholder="Digite sua senha" required>
-                <button type="submit" name="registro">Registrar</button>
-            </form>
-        </div>
-    </section>
+        <img src="./assents/Arte.png" alt="">    
+        <div id="container">
+        <header>
+                <span id="logo">Cripto</span>
+                <span id="logo2">Zap</span>
+        </header>
+        <section id="body">
+            <div id="caixa1">
+                <div id="login">
+                    <h3>Login</h3>
+                    <p>Coloque a sua conta</p>
+                </div>
+                <form action="" method="post">
+                    <input class="email" type="email" name="email" placeholder="Digite seu email" required>
+                    <input class="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+                    <button class="botao" type="submit" name="login">Login</button>
+                </form>
+            </div>
+            <div id="caixa2">
+                <h3>Crie sua Conta</h3>
+                <form id="cadastro" action="" method="post">
+                    <input id="nome" type="text" placeholder="Digite seu nome" required>
+                    <input class="email" type="email" name="email_registro" placeholder="Digite seu email" required>
+                    <input class="senha" type="password" name="senha_registro" placeholder="Digite sua senha" required>
+                    <input class="senha" type="password" placeholder="Confirme sua senha" required>
+                    <button class="botao" type="submit" name="registro">Registrar</button>
+                </form>
+            </div>
+        </section>
+    
 
     <?php
     session_start(); // Inicie a sessão aqui
@@ -101,5 +110,6 @@
         }
     }
     ?>
+    </div>
 </body>
 </html>

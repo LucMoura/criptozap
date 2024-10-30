@@ -7,24 +7,29 @@
     <title>CriptoZap - Chat</title>
 </head>
 <body>
-    <header>
-        <h1><strong><em>CriptoZap Chat</em></strong></h1>
-        <img src="./assents/criptozap_logo.png" alt="">
-    </header>
-    <section id="body">
-        <div id="caixa">
-            <h3>Criptografar Mensagem</h3>
-            <form action="" method="post">
-                <input type="text" name="mensagem" placeholder="Digite sua mensagem para criptografar" required>
-                <button type="submit" name="action" value="encrypt">Criptografar</button>
-            </form>
-
-            <h3>Descriptografar Mensagem</h3>
-            <form action="" method="post">
-                <input type="text" name="mensagem_criptografada" placeholder="Digite a mensagem criptografada para descriptografar" required>
-                <button type="submit" name="action" value="decrypt">Descriptografar</button>
+    <img src="./assents/Arte.png" alt="">
+    <div id="container">
+        <header>
+                <span id="logo">Cripto</span>
+                <span id="logo2">Zap</span>
+        </header>
+    <section id="body1">
+        <div id="funcionalidades">
+        <div id="caixa3">
+            <h3>Criptografar</h3>
+            <form class="formulario" action="" method="post">
+                <input class="email" type="text" name="mensagem" placeholder="Digite a mensagem" required>
+                <button class="botao" id="botao1" type="submit" name="action" value="encrypt">Criptografar</button>
             </form>
         </div>
+        <div id="caixa4">
+            <h3>Descriptografar</h3>
+            <form class="formulario" action="" method="post">
+                <input class="email" type="text" name="mensagem_criptografada" placeholder="Digite a mensagem" required>
+                <button class="botao" id="botao2" type="submit" name="action" value="decrypt">Descriptografar</button>
+            </form>
+        </div>
+</div>
 
         <div id="mensagens">
             <h3>Mensagens</h3>
@@ -110,5 +115,6 @@
             ?>
         </div>
     </section>
+    </div>
 </body>
 </html>
